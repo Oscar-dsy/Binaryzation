@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
-# ===================== 路径设置 =====================
 original_folder = ""
 output_folder = ""
 
@@ -54,4 +53,4 @@ for filename in os.listdir(original_folder):
         df = pd.DataFrame(binary_array)
         df.to_excel(excel_path, index=False, header=False)
     except Exception as e:
-        print(f"false：{filename}，原因：{e}")
+        print(f"false：{filename}，reason：{e}")
